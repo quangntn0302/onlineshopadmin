@@ -1,0 +1,23 @@
+{
+  "name": "server_side_render",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quangntn0302/onlineshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quangntn0302/onlineshop/issues"
+  },
+  "homepage": "https://github.com/quangntn0302/onlineshop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
