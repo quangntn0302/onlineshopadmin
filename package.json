@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
+    "build": "nodemon src/app.js -e js,hbs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-    "engines": {
+  "engines": {
     "node": "10.x"
   },
   "repository": {
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/quangntn0302/onlineshop#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "hbs": "^4.1.0"
   }
 }
