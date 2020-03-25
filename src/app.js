@@ -26,4 +26,8 @@ app.get('/', (request, response) => {
   response.render('index')
 })
 
+app.get('/statictis', (reqeust, response) => {
+  
+})
+
 app.listen(process.env.PORT || 3300)
