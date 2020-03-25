@@ -9,11 +9,13 @@ const publicDirectory = path.join(__dirname, '../public')
 const viewDirectory = path.join(__dirname, '../public/template')
 const partialsDirectory = path.join(__dirname, '../public/template/partials')
 const partialsNavbarDirectory = path.join(__dirname, '../public/template/partials/navbar')
+const partialsAsideDirectory = path.join(__dirname, '../public/template/partials/aside')
 
 // middleware
 app.use(express.static(publicDirectory))
 hbs.registerPartials(partialsDirectory)
 hbs.registerPartials(partialsNavbarDirectory)
+hbs.registerPartials(partialsAsideDirectory)
 
 // setup express
 app.set('view engine', 'hbs')
