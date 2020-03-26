@@ -52,18 +52,32 @@ app.get('/homeregisterstatistic', (request, response) => {
   response.render('homeregisterstatistic', { data })
 })
 
-app.get('/productbestsell', (request, response) => {
+app.get('/productbestsellstatistic', (request, response) => {
   const data = {
     title: 'Product best sell'
   }
-  response.render('productbestsell', { data })
+  response.render('productbestsellstatistic', { data })
 })
 
-app.get('/productpotential', (request, response) => {
+app.get('/productpotentialstatistic', (request, response) => {
   const data = {
     title: 'Product potential in the future'
   }
-  response.render('productpotential', { data })
+  response.render('productpotentialstatistic', { data })
+})
+
+app.get('/usermanagement', (request, response) => {
+  const data = {
+    title: 'User management'
+  }
+  response.render('usermanagement', { data })
+})
+
+app.get('/rolemanagement', (request, response) => {
+  const data = {
+    title: 'Role management'
+  }
+  response.render('rolemanagement', { data })
 })
 
 app.listen(process.env.PORT || 3300)
