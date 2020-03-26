@@ -26,4 +26,8 @@ app.get('/', (request, response) => {
   response.render('index')
 })
 
+app.get('/homepagestatistic', (request, response) => {
+  response.render('homepagestatistic')
+})
+
 app.listen(process.env.PORT || 3300)
