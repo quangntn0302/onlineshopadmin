@@ -86,18 +86,74 @@ app.get('/rolemanagement', (request, response) => {
   response.render('rolemanagement', { data })
 })
 
-app.get('/customerbasic', (request, response) => {
+app.get('/customermanagementbasic', (request, response) => {
   const data = {
     title: 'Customer account'
   }
-  response.render('customerbasic', { data })
+  response.render('customermanagementbasic', { data })
 })
 
-app.get('/customeradvance', (request, response) => {
+app.get('/customermanagementadvance', (request, response) => {
   const data = {
     title: 'Customer band'
   }
-  response.render('customeradvance', { data })
+  response.render('customermanagementadvance', { data })
+})
+
+app.get('/eventmanagementbasis', (request, response) => {
+  const data = {
+    title: 'Basic event'
+  }
+  response.render('eventmanagementbasis', { data })
+})
+
+app.get('/eventmanagementadvance', (request, response) => {
+  const data = {
+    title: 'Advance event'
+  }
+  response.render('eventmanagementadvance', { data })
+})
+
+app.get('/categorymanagementbasis', (request, response) => {
+  const data = {
+    title: 'basis category'
+  }
+  response.render('categorymanagementbasis', { data })
+})
+
+app.get('/categorymanagementadvance', (request, response) => {
+  const data = {
+    title: 'Advance category'
+  }
+  response.render('categorymanagementbasis', { data })
+})
+
+app.get('/productmanagementbasis', (request, response) => {
+  const data = {
+    title: 'basis product'
+  }
+  response.render('productmanagementbasis', { data })
+})
+
+app.get('/productmanagementadvance', (request, response) => {
+  const data = {
+    title: 'Advance product'
+  }
+  response.render('productmanagementadvance', { data })
+})
+
+app.get('/newmanagementbasis', (request, response) => {
+  const data = {
+    title: 'basis new'
+  }
+  response.render('newmanagementbasis', { data })
+})
+
+app.get('/newmanagementadvance', (request, response) => {
+  const data = {
+    title: 'Advance new'
+  }
+  response.render('newmanagementadvance', { data })
 })
 
 app.listen(process.env.PORT || 3300)
