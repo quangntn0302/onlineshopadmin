@@ -11,6 +11,9 @@ const partialsDirectory = path.join(__dirname, '../public/template/partials')
 const partialsNavbarDirectory = path.join(__dirname, '../public/template/partials/navbar')
 const partialsAsideDirectory = path.join(__dirname, '../public/template/partials/aside')
 const partialsTttleDirectory = path.join(__dirname, '../public/template/partials/title')
+const renderPartialsDirectory = path.join(__dirname, '../public/template/renderpartials')
+const renderPartialsAsideBarDirectory = path.join(__dirname, '../public/template/renderpartials/aside_bar')
+const renderPartialsNavBarDirectory = path.join(__dirname, '../public/template/renderpartials/nav_header')
 
 // middleware
 app.use(express.static(publicDirectory))
@@ -18,6 +21,9 @@ hbs.registerPartials(partialsDirectory)
 hbs.registerPartials(partialsNavbarDirectory)
 hbs.registerPartials(partialsAsideDirectory)
 hbs.registerPartials(partialsTttleDirectory)
+hbs.registerPartials(renderPartialsDirectory)
+hbs.registerPartials(renderPartialsAsideBarDirectory)
+hbs.registerPartials(renderPartialsNavBarDirectory)
 
 // setup express
 app.set('view engine', 'hbs')
@@ -78,6 +84,20 @@ app.get('/rolemanagement', (request, response) => {
     title: 'Role management'
   }
   response.render('rolemanagement', { data })
+})
+
+app.get('/customerbasic', (request, response) => {
+  const data = {
+    title: 'Customer account'
+  }
+  response.render('customerbasic', { data })
+})
+
+app.get('/customeradvance', (request, response) => {
+  const data = {
+    title: 'Customer band'
+  }
+  response.render('customeradvance', { data })
 })
 
 app.listen(process.env.PORT || 3300)
