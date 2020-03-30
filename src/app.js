@@ -156,4 +156,29 @@ app.get('/newmanagementadvance', (request, response) => {
   response.render('newmanagementadvance', { data })
 })
 
+app.get('/login', (request, response) => {
+  response.render('login')
+})
+
+app.get('/notifications', (request, response) => {
+  const data = {
+    title: 'Notification'
+  }
+  response.render('notifications', { data })
+})
+
+app.get('/notificationsbasis', (request, response) => {
+  const data = {
+    title: 'Notification basis'
+  }
+  response.render('notificationsbasis', { data })
+})
+
+app.get('/notificationsadvance', (request, response) => {
+  const data = {
+    title: 'Notification advance'
+  }
+  response.render('notificationsadvance', { data })
+})
+
 app.listen(process.env.PORT || 3300)
