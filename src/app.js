@@ -14,6 +14,7 @@ const partialsTttleDirectory = path.join(__dirname, '../public/template/partials
 const renderPartialsDirectory = path.join(__dirname, '../public/template/renderpartials')
 const renderPartialsAsideBarDirectory = path.join(__dirname, '../public/template/renderpartials/aside_bar')
 const renderPartialsNavBarDirectory = path.join(__dirname, '../public/template/renderpartials/nav_header')
+const renderPartialsContentDirectory = path.join(__dirname, '../public/template/renderpartials/content')
 
 // middleware
 app.use(express.static(publicDirectory))
@@ -24,6 +25,7 @@ hbs.registerPartials(partialsTttleDirectory)
 hbs.registerPartials(renderPartialsDirectory)
 hbs.registerPartials(renderPartialsAsideBarDirectory)
 hbs.registerPartials(renderPartialsNavBarDirectory)
+hbs.registerPartials(renderPartialsContentDirectory)
 
 // setup express
 app.set('view engine', 'hbs')
@@ -125,7 +127,7 @@ app.get('/categorymanagementadvance', (request, response) => {
   const data = {
     title: 'Advance category'
   }
-  response.render('categorymanagementbasis', { data })
+  response.render('categorymanagementadvance', { data })
 })
 
 app.get('/productmanagementbasis', (request, response) => {
@@ -179,6 +181,13 @@ app.get('/notificationsadvance', (request, response) => {
     title: 'Notification advance'
   }
   response.render('notificationsadvance', { data })
+})
+
+app.get('/profilepersonal', (request, response) => {
+  const data = {
+    title: 'profile'
+  }
+  response.render('profilepersonal', { data })
 })
 
 app.listen(process.env.PORT || 3300)
