@@ -1,3 +1,78 @@
 .my_image {
   border-radius: 50%;
 }
+
+.my_image1 {
+  border-radius: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container_content {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.row-style {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.col-style:not(:last-child) {
+  margin-right: 50px;
+}
+
+div.group {
+  margin-bottom: 50px;
+}
+
+.input-style {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  border-radius: 0;
+  width: 400px;
+}
+
+.input-style:not(:last-child) {
+  margin-right: 20px;
+}
+
+.input-position {
+  width: 350px;
+}
+
+.input-date {
+  width: 200px;
+}
+
+.input-company {
+  border-bottom: 1px black dotted;
+}
+
+.input-first-name,
+.input-last-name {
+  width: 250px;
+}
+
+.input-full-name {
+  width: 450px;
+}
+
+.profile__container {
+  display: flex;
+}
+
+.input-style-credit-card {
+  margin-left: 20px;
+  width: 450px;
+}
+
+.input-phone,
+.input-moblie {
+  width: 280px;
+}
