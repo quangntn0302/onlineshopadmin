@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/quangntn0302/onlineshop#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "hbs": "^4.1.0"
   }
 }
